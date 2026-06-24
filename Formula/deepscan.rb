@@ -9,6 +9,9 @@ class Deepscan < Formula
   depends_on "rust" => :build
 
   def install
+    # rust-toolchain.toml pins an exact version for CI reproducibility, but
+    # Homebrew provides its own rust — drop the pin and build with that.
+    (buildpath/"rust-toolchain.toml").unlink
     system "cargo", "install", *std_cargo_args(path: "crates/deepscan-cli")
   end
 

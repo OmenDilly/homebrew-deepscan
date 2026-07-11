@@ -1,8 +1,8 @@
 class Deepscan < Formula
   desc "Fast macOS disk forensics — reclaimable space + leak detection"
   homepage "https://github.com/OmenDilly/deepscan"
-  url "https://github.com/OmenDilly/deepscan/archive/refs/tags/v0.1.8.tar.gz"
-  sha256 "d5ef25a6def75ffaa37a10f91c50f9196ac075cabdfe264822d2fc71627b7c15"
+  url "https://github.com/OmenDilly/deepscan/archive/refs/tags/v0.1.9.tar.gz"
+  sha256 "df2cc2996365d039527e87813d8c9332fb967ef71e15d50080b3f8817faba84e"
   license "MIT"
   head "https://github.com/OmenDilly/deepscan.git", branch: "main"
 
